@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cypress": "./node_modules/.bin/cypress open"
+    "cypress": "./node_modules/.bin/cypress open",
+    "start_run" : "cypress run --spec 'cypress/integration/start-run.spec.js'",
+    "end_run" : "cypress run --spec 'cypress/integration/end-run.spec.js'"
   },
   "dependencies": {
     "aggregate-error": "^3.1.0",

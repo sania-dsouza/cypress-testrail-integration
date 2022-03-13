@@ -11,13 +11,27 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
-
+const fs = require('fs')
 /**
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
+
 module.exports = (on, config) => {
+  var run_id;
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  require('cypress-testrail-reporter')
+  on('task', {
+    set_run_id(val) {
+      run_id = val;
+      return null
+    }
+  })
+
+  on('task', {
+    get_run_id() {
+      return run_id
+    }
+  })
+
 }

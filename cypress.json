@@ -2,6 +2,8 @@
     "env" : {
         "TR_LINK" : "https://saniadsouza2012.testrail.io/index.php?",
         "TR_USER" : "sania.dsouza2012@gmail.com",
-        "TR_PASS" : "3bMFctrTN8JZPQ/YYKO9-hSEQyFMyjFr5YQKlVT4C"
+        "TR_PASS" : "3bMFctrTN8JZPQ/YYKO9-hSEQyFMyjFr5YQKlVT4C",
+        "proj_id" : 1,
+        "suite_id" : 1
     }
 }

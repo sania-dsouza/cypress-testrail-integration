@@ -1,27 +1,23 @@
-
-
 describe('Test API endpoints', function() {
 
-    // before(function(){
-    //     cy.addTestRun(1,1);  // add run for proj_id = 1 and suite_id=1
-    //     }
-    // )
 
     afterEach(function() {
         cy.log('test is complete');
 
-        cy.addResult(9, getTest(Cypress.currentTest.title), getStatus(this.currentTest.state), "passed from the aftereach; test")
+        cy.addResult(50, getTest(Cypress.currentTest.title), getStatus(this.currentTest.state), "passed from the aftereach; test")
         
-    })
-
-    after(function() {
-        cy.closeRun(9);
+        cy.log('result is now added');
     })
 
 
     it('C1 Test case 1', function() {
         // ... test code ... 
         expect(1).to.eq(1);
+
+        // get corresponding result_id 
+        // 449 is the result_id (and not the test_id ) and this is needs a command to be added to make it dynamic 
+
+        cy.addAttachment(449);   // cy.addAttachment(result_id);
     })
 
     it('C2 Test case 2', function() {
