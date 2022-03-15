@@ -56,10 +56,10 @@ Cypress.Commands.add('addAttachment', (result_id) => {
     const formData = new FormData()
     var base64;
 
-    cy.readFile("/Users/dsouzas/Personal/cypress-TR/test.png", 'base64').then((logo) => {
+    cy.readFile("/Users/dsouzas/Personal/cypress-TR/test.png", 'base64').then((logo) => {    // get the base64 value programmatically
         cy.log(logo);
 
-        formData.set('attachment', Cypress.Blob.base64StringToBlob(logo), 'test.png')  // get the base64 value programmatically
+        formData.set('attachment', Cypress.Blob.base64StringToBlob(logo), 'test.png') 
 
         cy.request({
             method : 'POST', 
