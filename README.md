@@ -1,9 +1,9 @@
 #### This project has the following Cypress-TR integrations: 
 
-> Add test run 
-> Add result status : passed , failed, blocked, retest , untested 
-> add attachment to test 
-> Close run 
+- Add test run 
+- Add result status : passed , failed, blocked, retest , untested 
+- add attachment to test 
+- Close run 
 
 #### What is yet to be done : 
 One thing that must be remembered is that `cypress open` works to start a run and end the run by sharing the run_id. 
