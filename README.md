@@ -11,6 +11,7 @@ This doesn't work using the `cypress run` command.
 
 #### Left to do besides above: 
 *Run for all suites in project*
+*Get result_ids  dynamically for attachments*
 *Add attachment for only failed tests*
-*Add failed tests context*
+*make screenshot path dynamic*
 
